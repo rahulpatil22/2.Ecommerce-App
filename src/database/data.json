@@ -70,7 +70,7 @@
           "HD101": {
             "image": "",
             "price": "$120",
-            "rating": 6,
+            "rating": 4,
             "discount": "22%"
           }
         },
@@ -86,7 +86,7 @@
           "XSD120": {
             "image": "",
             "price": "$100",
-            "rating": 6,
+            "rating": 4,
             "discount": "18%"
           }
         },
@@ -94,7 +94,7 @@
           "101Plus": {
             "image": "",
             "price": "$150",
-            "rating": 4,
+            "rating": 2,
             "discount": "19%"
           }
         },
@@ -102,7 +102,7 @@
           "Xperia": {
             "image": "",
             "price": "$160",
-            "rating": 7,
+            "rating": 4,
             "discount": "10%"
           }
         },
@@ -110,7 +110,7 @@
           "Digital101": {
             "image": "",
             "price": "$160",
-            "rating": 7,
+            "rating": 3,
             "discount": "18%"
           }
         },
@@ -118,7 +118,7 @@
           "SmartWay": {
             "image": "",
             "price": "$155",
-            "rating": 8,
+            "rating": 2,
             "discount": "10%"
           }
         }
@@ -131,7 +131,7 @@
           "14 Max Pro": {
             "image": "",
             "price": "$120",
-            "rating": 9,
+            "rating": 5,
             "discount": "5%"
           }
         },
@@ -139,7 +139,7 @@
           "Edge 30": {
             "image": "",
             "price": "$125",
-            "rating": 7,
+            "rating": 3.5,
             "discount": "10%"
           }
         },
@@ -147,7 +147,7 @@
           "S30": {
             "image": "",
             "price": "$175",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "10%"
           }
         },
@@ -155,7 +155,7 @@
           "M11": {
             "image": "",
             "price": "$165",
-            "rating": 8,
+            "rating": 4,
             "discount": "15%"
           }
         },
@@ -163,7 +163,7 @@
           "MaxPro": {
             "image": "",
             "price": "$155",
-            "rating": 7,
+            "rating": 3.5,
             "discount": "15%"
           }
         },
@@ -171,7 +171,7 @@
           "Note": {
             "image": "",
             "price": "$135",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "18%"
           }
         },
@@ -179,7 +179,7 @@
           "10T": {
             "image": "",
             "price": "$140",
-            "rating": 8,
+            "rating": 4,
             "discount": "20%"
           }
         },
@@ -187,7 +187,7 @@
           "Fusion": {
             "image": "",
             "price": "$135",
-            "rating": 9,
+            "rating": 5,
             "discount": "5%"
           }
         },
@@ -195,7 +195,7 @@
           "Sound Ultra": {
             "image": "",
             "price": "$150",
-            "rating": 8,
+            "rating": 4,
             "discount": "10%"
           }
         },
@@ -203,7 +203,7 @@
           "Wide Ultra": {
             "image": "",
             "price": "$130",
-            "rating": 6,
+            "rating": 3,
             "discount": "20%"
           }
         },
@@ -211,7 +211,7 @@
           "Reno": {
             "image": "",
             "price": "$140",
-            "rating": 6,
+            "rating": 3,
             "discount": "12%"
           }
         },
@@ -219,7 +219,7 @@
           "Xconnect": {
             "image": "",
             "price": "$135",
-            "rating": 8,
+            "rating": 4,
             "discount": "12%"
           }
         },
@@ -227,7 +227,7 @@
           "Narzo": {
             "image": "",
             "price": "$150",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "5%"
           }
         },
@@ -235,7 +235,7 @@
           "C12": {
             "image": "",
             "price": "$175",
-            "rating": 8,
+            "rating": 4,
             "discount": "5%"
           }
         },
@@ -243,7 +243,7 @@
           "Reger": {
             "image": "",
             "price": "$155",
-            "rating": 7,
+            "rating": 3.5,
             "discount": "10%"
           }
         }
@@ -255,7 +255,7 @@
           "R11": {
             "image": "",
             "price": "$175",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "5%"
           }
         },
@@ -263,14 +263,14 @@
           "OSS3": {
             "image": "",
             "price": "$180",
-            "rating": 7,
+            "rating": 3.5,
             "discount": "15%"
           }
         },
         "Pattek Philippe": {
           "PP125": {
             "price": "$175",
-            "rating": 8,
+            "rating": 4,
             "discount": "20%"
           }
         },
@@ -278,7 +278,7 @@
           "Round360": {
             "image": "",
             "price": "$145",
-            "rating": 8,
+            "rating": 4,
             "discount": "5%"
           }
         },
@@ -286,7 +286,7 @@
           "TH60": {
             "image": "",
             "price": "$150",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "15%"
           }
         },
@@ -294,7 +294,7 @@
           "T30": {
             "image": "",
             "price": "$140",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "18%"
           }
         },
@@ -302,7 +302,7 @@
           "12R": {
             "image": "",
             "price": "$130",
-            "rating": 8,
+            "rating": 4,
             "discount": "20%"
           }
         },
@@ -310,7 +310,7 @@
           "MT300": {
             "image": "",
             "price": "$135",
-            "rating": 8,
+            "rating": 4,
             "discount": "5%"
           }
         },
@@ -318,7 +318,7 @@
           "BR90": {
             "image": "",
             "price": "$125",
-            "rating": 8,
+            "rating": 4,
             "discount": "10%"
           }
         },
@@ -326,7 +326,7 @@
           "TS36": {
             "image": "",
             "price": "$130",
-            "rating": 7,
+            "rating": 3.5,
             "discount": "20%"
           }
         },
@@ -334,7 +334,7 @@
           "ZT32": {
             "image": "",
             "price": "$140",
-            "rating": 7,
+            "rating": 3.5,
             "discount": "12%"
           }
         },
@@ -342,7 +342,7 @@
           "BG35": {
             "image": "",
             "price": "$135",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "12%"
           }
         },
@@ -350,7 +350,7 @@
           "FL90": {
             "image": "",
             "price": "$180",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "5%"
           }
         },
@@ -358,7 +358,7 @@
           "VC60": {
             "image": "",
             "price": "$160",
-            "rating": 8,
+            "rating": 4,
             "discount": "15%"
           }
         },
@@ -366,7 +366,7 @@
           "PRS30": {
             "image": "",
             "price": "$155",
-            "rating": 8,
+            "rating": 4,
             "discount": "5%"
           }
         }
@@ -378,7 +378,7 @@
           "AD14": {
             "image": "",
             "price": "$115",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "5%"
           }
         },
@@ -386,7 +386,7 @@
           "NB1": {
             "image": "",
             "price": "$125",
-            "rating": 8,
+            "rating": 4,
             "discount": "10%"
           }
         },
@@ -394,7 +394,7 @@
           "CV23": {
             "image": "",
             "price": "$150",
-            "rating": 8,
+            "rating": 4,
             "discount": "10%"
           }
         },
@@ -402,7 +402,7 @@
           "V25": {
             "image": "",
             "price": "$165",
-            "rating": 8,
+            "rating": 4,
             "discount": "20%"
           }
         },
@@ -410,7 +410,7 @@
           "RB6": {
             "image": "",
             "price": "$155",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "10%"
           }
         },
@@ -418,7 +418,7 @@
           "PM20": {
             "image": "",
             "price": "$135",
-            "rating": 7,
+            "rating": 3.5,
             "discount": "15%"
           }
         },
@@ -426,7 +426,7 @@
           "SY8": {
             "image": "",
             "price": "$120",
-            "rating": 8,
+            "rating": 4,
             "discount": "20%"
           }
         },
@@ -434,7 +434,7 @@
           "NKsport": {
             "image": "",
             "price": "$135",
-            "rating": 8,
+            "rating": 4,
             "discount": "5%"
           }
         },
@@ -442,7 +442,7 @@
           "Quantum": {
             "image": "",
             "price": "$150",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "5%"
           }
         },
@@ -450,7 +450,7 @@
           "Torrent": {
             "image": "",
             "price": "$125",
-            "rating": 6,
+            "rating": 3,
             "discount": "20%"
           }
         },
@@ -458,7 +458,7 @@
           "Cloud": {
             "image": "",
             "price": "$135",
-            "rating": 6,
+            "rating": 3,
             "discount": "13%"
           }
         },
@@ -466,7 +466,7 @@
           "ACS pro": {
             "image": "",
             "price": "$125",
-            "rating": 8,
+            "rating": 4,
             "discount": "12%"
           }
         },
@@ -474,7 +474,7 @@
           "Retro": {
             "image": "",
             "price": "$160",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "5%"
           }
         },
@@ -482,7 +482,7 @@
           "CT-05": {
             "image": "",
             "price": "$165",
-            "rating": 8,
+            "rating": 4,
             "discount": "5%"
           }
         },
@@ -490,7 +490,7 @@
           "Ace": {
             "image": "",
             "price": "$155",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "10%"
           }
         }
@@ -502,7 +502,7 @@
           "LT60": {
             "image": "",
             "price": "$135",
-            "rating": 9,
+            "rating": 4,
             "discount": "5%"
           }
         },
@@ -510,7 +510,7 @@
           "Vanilla": {
             "image": "",
             "price": "$125",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "10%"
           }
         },
@@ -518,7 +518,7 @@
           "Comfort": {
             "image": "",
             "price": "$175",
-            "rating": 8,
+            "rating": 4,
             "discount": "15%"
           }
         },
@@ -526,7 +526,7 @@
           "ST6": {
             "image": "",
             "price": "$150",
-            "rating": 8,
+            "rating": 4,
             "discount": "15%"
           }
         },
@@ -534,7 +534,7 @@
           "OC8": {
             "image": "",
             "price": "$165",
-            "rating": 7,
+            "rating": 3.5,
             "discount": "10%"
           }
         },
@@ -542,7 +542,7 @@
           "DS6": {
             "image": "",
             "price": "$145",
-            "rating": 8,
+            "rating": 4,
             "discount": "18%"
           }
         },
@@ -550,7 +550,7 @@
           "CT3": {
             "image": "",
             "price": "$125",
-            "rating": 8,
+            "rating": 4,
             "discount": "20%"
           }
         },
@@ -558,7 +558,7 @@
           "BB65": {
             "image": "",
             "price": "$180",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "5%"
           }
         },
@@ -566,7 +566,7 @@
           "TU45": {
             "image": "",
             "price": "$150",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "10%"
           }
         },
@@ -574,7 +574,7 @@
           "BS9": {
             "image": "",
             "price": "$125",
-            "rating": 6,
+            "rating": 3,
             "discount": "20%"
           }
         },
@@ -582,7 +582,7 @@
           "RC90": {
             "image": "",
             "price": "$125",
-            "rating": 6,
+            "rating": 3,
             "discount": "12%"
           }
         },
@@ -590,7 +590,7 @@
           "SL10": {
             "image": "",
             "price": "$120",
-            "rating": 8,
+            "rating": 4,
             "discount": "10%"
           }
         },
@@ -598,7 +598,7 @@
           "HT15": {
             "image": "",
             "price": "$150",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "5%"
           }
         },
@@ -606,7 +606,7 @@
           "PP25": {
             "image": "",
             "price": "$155",
-            "rating": 8,
+            "rating": 4,
             "discount": "10%"
           }
         },
@@ -614,7 +614,7 @@
           "AT30": {
             "image": "",
             "price": "$160",
-            "rating": 9,
+            "rating": 4.5,
             "discount": "10%"
           }
         }
