@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-// import "./styles.css";
+import "./Styles.css"
 import AllTabs from "./AllTabs";
 // // Tabs Components
 import TabOne from "./TabOne";
 import TabTwo from "./TabTwo";
 import TabThree from "./TabThree";
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
+import styled from "styled-components";
+import { Icon, Link, NavItem, StyledNavbar } from './StyledComponent'
 
 
 
@@ -15,20 +17,21 @@ type TabsType = {
   Component: React.FC<{}>;
 }[];
 
+
 // Tabs Array
 const tabs: TabsType = [
   {
-    label: "Tab One",
+    label: "TV",
     index: 1,
     Component: TabOne
   },
   {
-    label: "Tab Two",
+    label: "Mobile",
     index: 2,
     Component: TabTwo
   },
   {
-    label: "Tab Three",
+    label: "Watches",
     index: 3,
     Component: TabThree
   }
@@ -38,7 +41,7 @@ export default function MainTab() {
   const [selectedTab, setSelectedTab] = useState<number>(tabs[0].index);
 
   return (
-    <div className="App">
+    <div className="Styled">
       <h1> </h1>
       <h2></h2>
       <br />

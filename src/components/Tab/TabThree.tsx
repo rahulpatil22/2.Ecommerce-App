@@ -1,12 +1,10 @@
 import React, { FC, Fragment } from "react";
+import CardComponent from "../Card/CardComponent";
 
 const TabThree: FC<{}> = () => {
   return (
     <Fragment>
-      <h3>Tab Three</h3>
-      <p>
-        Three
-      </p>
+    <CardComponent/>
     </Fragment>
   );
 };

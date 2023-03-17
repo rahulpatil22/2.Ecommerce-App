@@ -1,19 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Records from "../data.json"
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
-import Home from './components/Home/Home';
-import MainTab from './components/Tab/MainTab';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Records from "../data.json";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import MainTab from "./components/Tab/MainTab";
+import Main from "./components/Tabs/Main";
+import GlobalStyle from "./components/GlobalStyle/GlobalStyle";
+import { ThemeProvider } from 'styled-components';
 
 function App() {
+ 
   return (
-    <MainTab/>
-//     <Router>
-// <Routes>
-//   <Route path='/' element={Tab}/>
-// </Routes>
-//     </Router>
+    <>
+  
+    <GlobalStyle/>
+      <MainTab />
+    
+      
+      
+      {/* <Main /> */}
+    </>
+    //     <Router>
+    // <Routes>
+    //   <Route path='/' element={Tab}/>
+    // </Routes>
+    //     </Router>
   );
 }
 

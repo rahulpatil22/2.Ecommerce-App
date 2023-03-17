@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-// import "../styles.css";
+import "./Styles.css";
+import { Icon, Link, NavItem, StyledNavbar } from './StyledComponent'
 
 type TabsProps = {
   tabs: {
@@ -13,14 +14,7 @@ type TabsProps = {
   className?: string;
 };
 
-// /**
-//  * Avalible Props
-//  * @param className string
-//  * @param tab Array of object
-//  * @param selectedTab number
-//  * @param onClick Function to set the active tab
-//  * @param orientation Tab orientation Vertical | Horizontal
-//  */
+
 const AllTabs: FC<TabsProps> = ({
   className = "tabs-component",
   tabs = [],
@@ -31,12 +25,12 @@ const AllTabs: FC<TabsProps> = ({
   const Panel = tabs && tabs.find((tab) => tab.index === selectedTab);
 
   return (
-    <div
+    <StyledNavbar
       className={
         orientation === "vertical" ? className + " vertical" : className
       }
     >
-      <div role="tablist" aria-orientation={orientation}>
+      <NavItem role="tablist" aria-orientation={orientation}>
         {tabs.map((tab) => (
           <button
             className={selectedTab === tab.index ? "active" : ""}
@@ -52,7 +46,7 @@ const AllTabs: FC<TabsProps> = ({
             {tab.label}
           </button>
         ))}
-      </div>
+      </NavItem>
       <div
         role="tabpanel"
         aria-labelledby={`btn-${selectedTab}`}
@@ -60,7 +54,7 @@ const AllTabs: FC<TabsProps> = ({
       >
         {Panel && <Panel.Component index={selectedTab} />}
       </div>
-    </div>
+    </StyledNavbar>
   );
 };
 export default AllTabs;
