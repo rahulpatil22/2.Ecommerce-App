@@ -11,7 +11,7 @@ const CardContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1f2229;
+//   background: #1f2229;
   overflow: hidden;
 `;
 

@@ -8,8 +8,9 @@ const TabOne: FC<{}> = () => {
       <p>
         one
       </p> */}
-      <CardComponent/>
+      {/* <CardComponent/> */}
      
+
     </Fragment>
   );
 };

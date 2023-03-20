@@ -8,6 +8,7 @@ import MainTab from "./components/Tab/MainTab";
 import Main from "./components/Tabs/Main";
 import GlobalStyle from "./components/GlobalStyle/GlobalStyle";
 import { ThemeProvider } from 'styled-components';
+import Navbar from "./components/NavBar/NavBar";
 
 function App() {
  
@@ -15,7 +16,8 @@ function App() {
     <>
   
     <GlobalStyle/>
-      <MainTab />
+      {/* <MainTab /> */}
+      <Navbar/>
     
       
       
