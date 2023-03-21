@@ -7,8 +7,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainTab from "./components/Tab/MainTab";
 import Main from "./components/Tabs/Main";
 import GlobalStyle from "./components/GlobalStyle/GlobalStyle";
-import { ThemeProvider } from 'styled-components';
+
 import Navbar from "./components/NavBar/NavBar";
+import SidebarComponent from "./components/SideBarPages/SidebarComponent";
+
 
 function App() {
  
@@ -17,17 +19,15 @@ function App() {
   
     <GlobalStyle/>
       {/* <MainTab /> */}
-      <Navbar/>
+      {/* <Navbar/> */}
+      <SidebarComponent/>
+      {/* <Sidebar/> */}
     
       
       
       {/* <Main /> */}
     </>
-    //     <Router>
-    // <Routes>
-    //   <Route path='/' element={Tab}/>
-    // </Routes>
-    //     </Router>
+    
   );
 }
 

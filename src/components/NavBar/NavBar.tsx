@@ -13,15 +13,15 @@ import {
 import logo from "../assets/logo.png";
 import flag from "../assets/flag.png";
 import MainTab from "../Tab/MainTab";
-import Menubar from "../MenuBar/MenuBar";
+
 
 const Navbar: React.FC = () => {
   return (
     <>
       <Container>
-      <MainTab/>
+      {/* <MainTab/> */}
       </Container>
-      <Menubar />
+    
     </>
   );
 };

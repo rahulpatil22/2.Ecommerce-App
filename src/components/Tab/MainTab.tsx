@@ -21,7 +21,7 @@ type TabsType = {
 // Tabs Array
 const tabs: TabsType = [
   {
-    label: "TV",
+    label: "Home",
     index: 1,
     Component: TabOne
   },

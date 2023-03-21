@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledNavbar = styled.div`
-    width: 100%;
+    width: 120%;
     height: 80px;
     background-color:  rgb(245,245,245);
     color: #726466;
@@ -12,7 +12,7 @@ export const NavItem = styled.div`
     display: flex;
     justify-content: flex-start;  
     /* flex-direction:column ; */
-    align-items: center;
+    align-items: centre;
     gap: 30px;
     padding:1.5rem 20px;
     font-size: 15px;
