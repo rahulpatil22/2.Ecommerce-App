@@ -1,0 +1,6 @@
+export const CATEGORY_CHANGE = "CATEGORY_CHANGE";
+export const CATEGORY_ADD = "CATEGORY_ADD";
+export default {
+  CATEGORY_CHANGE,
+  CATEGORY_ADD,
+};

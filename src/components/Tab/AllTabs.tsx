@@ -1,28 +1,47 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import "./Styles.css";
-import { Icon, Link, NavItem, StyledNavbar } from './StyledComponent'
+import { Icon, Link, NavItem, StyledNavbar } from "./StyledComponent";
+import { useSelector, useDispatch } from "react-redux";
+import category from "../../reducers/category";
+import categoryAction from "../../Actions/categoryAction";
+import { ICategory } from "../../modals/ICategory";
+import { useNavigate } from "react-router-dom";
+import AddTab from "../Modal/Modal";
 
 type TabsProps = {
-  tabs: {
-    label: string;
-    index: number;
-    Component: FC<{ index: number }>;
-  }[];
-  selectedTab: number;
-  onClick: (index: number) => void;
   orientation?: "horizontal" | "vertical";
   className?: string;
 };
 
-
 const AllTabs: FC<TabsProps> = ({
   className = "tabs-component",
-  tabs = [],
-  selectedTab = 0,
-  onClick,
-  orientation = "horizontal"
+  orientation = "horizontal",
 }) => {
-  const Panel = tabs && tabs.find((tab) => tab.index === selectedTab);
+  const [showAddTab, setShowAddTab] = useState(false);
+  const category = useSelector((state: RootState) => state.categories);
+  const dispatch = useDispatch();
+  // const Panel = tabs && tabs.find((tab) => tab.index === selectedTab);
+  let navigate = useNavigate();
+
+  const addCategory = () => {
+    // let categories: ICategory[] = category.Categories;
+    // let catName = "Mobile";
+    // let id = categories[categories.length - 1].id;
+    // let newCat: ICategory = {
+    //   id: id + 1,
+    //   name: catName,
+    // };
+    // categories.push(newCat);
+    // console.log(categories);
+
+    // dispatch(categoryAction.addCategory(categories));
+    // navigate("/addTab");
+    setShowAddTab(true);
+  };
+
+  const onClose = () => {
+    setShowAddTab(!showAddTab);
+  };
 
   return (
     <StyledNavbar
@@ -31,29 +50,34 @@ const AllTabs: FC<TabsProps> = ({
       }
     >
       <NavItem role="tablist" aria-orientation={orientation}>
-        {tabs.map((tab) => (
+        {category.Categories.map((tab: ICategory) => (
           <button
-            className={selectedTab === tab.index ? "active" : ""}
-            onClick={() => onClick(tab.index)}
-            key={tab.index}
+            className={category.Tab === tab.name ? "active" : ""}
+            onClick={() => dispatch(categoryAction.changeCategory(tab.name))}
+            key={tab.id}
             type="button"
             role="tab"
-            aria-selected={selectedTab === tab.index}
-            aria-controls={`tabpanel-${tab.index}`}
-            tabIndex={selectedTab === tab.index ? 0 : -1}
-            id={`btn-${tab.index}`}
+            aria-selected={category.Tab === tab.name}
+            aria-controls={`tabpanel-${tab.id}`}
+            tabIndex={category.Tab === tab.name ? 0 : -1}
+            id={`btn-${tab.id}`}
           >
-            {tab.label}
+            {tab.name.toUpperCase()}
           </button>
         ))}
+
+        <button onClick={addCategory} type="button">
+          Add Tab
+        </button>
       </NavItem>
-      <div
+      {/* <div
         role="tabpanel"
         aria-labelledby={`btn-${selectedTab}`}
         id={`tabpanel-${selectedTab}`}
       >
         {Panel && <Panel.Component index={selectedTab} />}
-      </div>
+      </div> */}
+      {showAddTab && <AddTab onClose={onClose} />}
     </StyledNavbar>
   );
 };

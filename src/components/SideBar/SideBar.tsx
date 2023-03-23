@@ -35,7 +35,7 @@ const MenuIconClose = styled(Link)`
 `;
 
 const SidebarMenu = styled.div<{ close: boolean }>`
-  width: 220px;
+  width: 260px;
   height: 100vh;
   background-color: #000080;
   position: fixed;

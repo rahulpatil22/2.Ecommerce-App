@@ -5,7 +5,6 @@ import Records from "../data.json";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import MainTab from "./components/Tab/MainTab";
-import Main from "./components/Tabs/Main";
 import GlobalStyle from "./components/GlobalStyle/GlobalStyle";
 
 import Navbar from "./components/NavBar/NavBar";

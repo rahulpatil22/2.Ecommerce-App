@@ -1,0 +1,104 @@
+.modal {
+    position: absolute;
+    z-index: 1;
+    padding: 100px;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    background-color: rgb(141, 135, 135);
+    background-color: rgb(168, 156, 156);
+    border-radius: 0.5rem;
+  }
+  /* .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  } */
+  
+  /* The Close Button */
+  /* .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-content{
+    width: 400px;
+  } */
+  
+
+ 
+
+/* CSS */
+.modal-button {
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 30%;
+  margin: 12;
+  outline: 0;
+  float:right;
+  margin-right:5px;
+  margin-top: 10px;
+  
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20%;
+}
+
+.button:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+
+.button:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+
+.button:disabled:active {
+  pointer-events: none;
+}
+
+.button:disabled:hover {
+  box-shadow: none;
+}
+input{
+    width:50%;
+    height: 10%;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
