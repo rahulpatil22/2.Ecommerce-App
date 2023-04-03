@@ -5,121 +5,121 @@
         "Sony": {
           "Bravia": {
             "image": "",
-            "price":"$100",
+            "price":100,
             "rating": 4,
-            "discount": "15%"
+            "discount": 15
           }
         },
         "ONIDA": {
           "OXA101": {
             "image": "",
-            "price": "$125",
+            "price": 125,
             "rating": 3,
-            "discount": "14%"
+            "discount": 14
           }
         },
         "Videocon": {
           "4KPLus": {
             "image": "",
-            "price": "$115",
+            "price": 115,
             "rating": 4.5,
-            "discount": "18%"
+            "discount": 18
           }
         },
         "LG": {
           "icon": {
             "image": "",
-            "price": "$100",
+            "price": 100,
             "rating": 4,
-            "discount": "21%"
+            "discount": 21
           }
         },
         "Samsung": {
           "SmartTV": {
             "image": "",
-            "price": "$125",
+            "price": 125,
             "rating": 5,
-            "discount": "18%"
+            "discount": 18
           }
         },
         "LLoyd": {
           "S2230": {
             "image": "",
-            "price": "$95",
+            "price": 95,
             "rating": 4.5,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "Dell": {
           "AD355": {
             "image": "",
-            "price": "$150",
+            "price": 150,
             "rating": 5,
-            "discount": "17%"
+            "discount": 17
           }
         },
         "TCL": {
           "Xconnect": {
             "image": "",
-            "price": "$160",
+            "price": 160,
             "rating": 4,
-            "discount": "13%"
+            "discount": 13
           }
         },
         "Croma": {
           "HD101": {
             "image": "",
-            "price": "$120",
+            "price": 120,
             "rating": 4,
-            "discount": "22%"
+            "discount": 22
           }
         },
         "Apple": {
           "Neo": {
             "image": "",
-            "price": "$165",
+            "price": 165,
             "rating": 5,
-            "discount": "23%"
+            "discount": 23
           }
         },
         "MI": {
           "XSD120": {
             "image": "",
-            "price": "$100",
+            "price": 100,
             "rating": 4,
-            "discount": "18%"
+            "discount": 18
           }
         },
         "OnePLus": {
           "101Plus": {
             "image": "",
-            "price": "$150",
+            "price": 150,
             "rating": 2,
-            "discount": "19%"
+            "discount": 19
           }
         },
         "Xiomi": {
           "Xperia": {
             "image": "",
-            "price": "$160",
+            "price": 160,
             "rating": 4,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "Panasonic": {
           "Digital101": {
             "image": "",
-            "price": "$160",
+            "price": 160,
             "rating": 3,
-            "discount": "18%"
+            "discount": 18
           }
         },
         "Toshiba": {
           "SmartWay": {
             "image": "",
-            "price": "$155",
+            "price": 155,
             "rating": 2,
-            "discount": "10%"
+            "discount": 10
           }
         }
       }
@@ -130,121 +130,121 @@
         "Apple": {
           "14 Max Pro": {
             "image": "",
-            "price": "$120",
+            "price": 120,
             "rating": 5,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Motorola": {
           "Edge 30": {
             "image": "",
-            "price": "$125",
+            "price": 125,
             "rating": 3.5,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "Samsung": {
           "S30": {
             "image": "",
-            "price": "$175",
+            "price": 175,
             "rating": 4.5,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "Nokia": {
           "M11": {
             "image": "",
-            "price": "$165",
+            "price": 165,
             "rating": 4,
-            "discount": "15%"
+            "discount": 15
           }
         },
         "Xiomi": {
           "MaxPro": {
             "image": "",
-            "price": "$155",
+            "price": 155,
             "rating": 3.5,
-            "discount": "15%"
+            "discount": 15
           }
         },
         "MI": {
           "Note": {
             "image": "",
-            "price": "$135",
+            "price": 135,
             "rating": 4.5,
-            "discount": "18%"
+            "discount": 18
           }
         },
         "OnePlus": {
           "10T": {
             "image": "",
-            "price": "$140",
+            "price": 140,
             "rating": 4,
-            "discount": "20%"
+            "discount": 20
           }
         },
         "LG": {
           "Fusion": {
             "image": "",
-            "price": "$135",
+            "price": 135,
             "rating": 5,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Panasonic": {
           "Sound Ultra": {
             "image": "",
-            "price": "$150",
+            "price": 150,
             "rating": 4,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "Oppo": {
           "Wide Ultra": {
             "image": "",
-            "price": "$130",
+            "price": 130,
             "rating": 3,
-            "discount": "20%"
+            "discount": 20
           }
         },
         "Vivo": {
           "Reno": {
             "image": "",
-            "price": "$140",
+            "price": 140,
             "rating": 3,
-            "discount": "12%"
+            "discount": 12
           }
         },
         "Huawei": {
           "Xconnect": {
             "image": "",
-            "price": "$135",
+            "price": 135,
             "rating": 4,
-            "discount": "12%"
+            "discount": 12
           }
         },
         "Realme": {
           "Narzo": {
             "image": "",
-            "price": "$150",
+            "price": 150,
             "rating": 4.5,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Sony": {
           "C12": {
             "image": "",
-            "price": "$175",
+            "price": 175,
             "rating": 4,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Micromax": {
           "Reger": {
             "image": "",
-            "price": "$155",
+            "price": 155,
             "rating": 3.5,
-            "discount": "10%"
+            "discount": 10
           }
         }
       }
@@ -254,120 +254,120 @@
         "Rolex": {
           "R11": {
             "image": "",
-            "price": "$175",
+            "price": 175,
             "rating": 4.5,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Omega": {
           "OSS3": {
             "image": "",
-            "price": "$180",
+            "price": 180,
             "rating": 3.5,
-            "discount": "15%"
+            "discount": 15
           }
         },
         "Pattek Philippe": {
           "PP125": {
-            "price": "$175",
+            "price": 175,
             "rating": 4,
-            "discount": "20%"
+            "discount": 20
           }
         },
         "Seiko": {
           "Round360": {
             "image": "",
-            "price": "$145",
+            "price": 145,
             "rating": 4,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Tag Heur": {
           "TH60": {
             "image": "",
-            "price": "$150",
+            "price": 150,
             "rating": 4.5,
-            "discount": "15%"
+            "discount": 15
           }
         },
         "Timex": {
           "T30": {
             "image": "",
-            "price": "$140",
+            "price": 140,
             "rating": 4.5,
-            "discount": "18%"
+            "discount": 18
           }
         },
         "CITIZEN": {
           "12R": {
             "image": "",
-            "price": "$130",
+            "price": 130,
             "rating": 4,
-            "discount": "20%"
+            "discount": 20
           }
         },
         "Longines": {
           "MT300": {
             "image": "",
-            "price": "$135",
+            "price": 135,
             "rating": 4,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Blancpain": {
           "BR90": {
             "image": "",
-            "price": "$125",
+            "price": 125,
             "rating": 4,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "Tissot": {
           "TS36": {
             "image": "",
-            "price": "$130",
+            "price": 130,
             "rating": 3.5,
-            "discount": "20%"
+            "discount": 20
           }
         },
         "Zenith": {
           "ZT32": {
             "image": "",
-            "price": "$140",
+            "price": 140,
             "rating": 3.5,
-            "discount": "12%"
+            "discount": 12
           }
         },
         "Bvgari": {
           "BG35": {
             "image": "",
-            "price": "$135",
+            "price": 135,
             "rating": 4.5,
-            "discount": "12%"
+            "discount": 12
           }
         },
         "Fossil": {
           "FL90": {
             "image": "",
-            "price": "$180",
+            "price": 180,
             "rating": 4.5,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Vacheron Constantin": {
           "VC60": {
             "image": "",
-            "price": "$160",
+            "price": 160,
             "rating": 4,
-            "discount": "15%"
+            "discount": 15
           }
         },
         "Panerai": {
           "PRS30": {
             "image": "",
-            "price": "$155",
+            "price": 155,
             "rating": 4,
-            "discount": "5%"
+            "discount": 5
           }
         }
       }
@@ -377,121 +377,121 @@
         "Adidas": {
           "AD14": {
             "image": "",
-            "price": "$115",
+            "price": 115,
             "rating": 4.5,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "New Balance": {
           "NB1": {
             "image": "",
-            "price": "$125",
+            "price": 125,
             "rating": 4,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "Converse": {
           "CV23": {
             "image": "",
-            "price": "$150",
+            "price": 150,
             "rating": 4,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "Vans": {
           "V25": {
             "image": "",
-            "price": "$165",
+            "price": 165,
             "rating": 4,
-            "discount": "20%"
+            "discount": 20
           }
         },
         "Reebok": {
           "RB6": {
             "image": "",
-            "price": "$155",
+            "price": 155,
             "rating": 4.5,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "Puma": {
           "PM20": {
             "image": "",
-            "price": "$135",
+            "price": 135,
             "rating": 3.5,
-            "discount": "15%"
+            "discount": 15
           }
         },
         "Saucony": {
           "SY8": {
             "image": "",
-            "price": "$120",
+            "price": 120,
             "rating": 4,
-            "discount": "20%"
+            "discount": 20
           }
         },
         "Nike": {
           "NKsport": {
             "image": "",
-            "price": "$135",
+            "price": 135,
             "rating": 4,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Asic": {
           "Quantum": {
             "image": "",
-            "price": "$150",
+            "price": 150,
             "rating": 4.5,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Hoka": {
           "Torrent": {
             "image": "",
-            "price": "$125",
+            "price": 125,
             "rating": 3,
-            "discount": "20%"
+            "discount": 20
           }
         },
         "On Running": {
           "Cloud": {
             "image": "",
-            "price": "$135",
+            "price": 135,
             "rating": 3,
-            "discount": "13%"
+            "discount": 13
           }
         },
         "Salomon": {
           "ACS pro": {
             "image": "",
-            "price": "$125",
+            "price": 125,
             "rating": 4,
-            "discount": "12%"
+            "discount": 12
           }
         },
         "Jordan Brand": {
           "Retro": {
             "image": "",
-            "price": "$160",
+            "price": 160,
             "rating": 4.5,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Celine": {
           "CT-05": {
             "image": "",
-            "price": "$165",
+            "price": 165,
             "rating": 4,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Gucci": {
           "Ace": {
             "image": "",
-            "price": "$155",
+            "price": 155,
             "rating": 4.5,
-            "discount": "10%"
+            "discount": 10
           }
         }
       }
@@ -501,121 +501,121 @@
         "Sofas": {
           "LT60": {
             "image": "",
-            "price": "$135",
+            "price": 135,
             "rating": 4,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Bed": {
           "Vanilla": {
             "image": "",
-            "price": "$125",
+            "price": 125,
             "rating": 4.5,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "Mattreses": {
           "Comfort": {
             "image": "",
-            "price": "$175",
+            "price": 175,
             "rating": 4,
-            "discount": "15%"
+            "discount": 15
           }
         },
         "Study Table": {
           "ST6": {
             "image": "",
-            "price": "$150",
+            "price": 150,
             "rating": 4,
-            "discount": "15%"
+            "discount": 15
           }
         },
         "Office Chair": {
           "OC8": {
             "image": "",
-            "price": "$165",
+            "price": 165,
             "rating": 3.5,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "Dinning Set": {
           "DS6": {
             "image": "",
-            "price": "$145",
+            "price": 145,
             "rating": 4,
-            "discount": "18%"
+            "discount": 18
           }
         },
         "Coffe Table": {
           "CT3": {
             "image": "",
-            "price": "$125",
+            "price": 125,
             "rating": 4,
-            "discount": "20%"
+            "discount": 20
           }
         },
         "Bean Bags": {
           "BB65": {
             "image": "",
-            "price": "$180",
+            "price": 180,
             "rating": 4.5,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "TV Units": {
           "TU45": {
             "image": "",
-            "price": "$150",
+            "price": 150,
             "rating": 4.5,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "BookShelves": {
           "BS9": {
             "image": "",
-            "price": "$125",
+            "price": 125,
             "rating": 3,
-            "discount": "20%"
+            "discount": 20
           }
         },
         "Recliner": {
           "RC90": {
             "image": "",
-            "price": "$125",
+            "price": 125,
             "rating": 3,
-            "discount": "12%"
+            "discount": 12
           }
         },
         "Swing": {
           "SL10": {
             "image": "",
-            "price": "$120",
+            "price": 120,
             "rating": 4,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "Home Temple": {
           "HT15": {
             "image": "",
-            "price": "$150",
+            "price": 150,
             "rating": 4.5,
-            "discount": "5%"
+            "discount": 5
           }
         },
         "Portable Pool": {
           "PP25": {
             "image": "",
-            "price": "$155",
+            "price": 155,
             "rating": 4,
-            "discount": "10%"
+            "discount": 10
           }
         },
         "Aquarium Tank": {
           "AT30": {
             "image": "",
-            "price": "$160",
+            "price": 160,
             "rating": 4.5,
-            "discount": "10%"
+            "discount": 10
           }
         }
       }

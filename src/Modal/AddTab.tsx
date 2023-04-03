@@ -1,13 +1,60 @@
 import React, { useState } from "react";
-import { ITab } from "../../modals/ITab";
-import "./Styles.css";
+import { ITab } from "../modals/ITab";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
-import tabAction from "../../Actions/tabAction";
+import tabAction from "../Actions/tabAction";
+import "./Styles.css";
+
 
 type Props = {
   onClose: () => void;
 };
+
+// const Container = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// `;
+
+// const Input = styled.input`
+//   margin: 20px;
+//   padding: 10px;
+//   width: 300px;
+//   border-radius: 5px;
+//   border: 1px solid gray;
+// `;
+
+// const Table = styled.table`
+//   border-collapse: collapse;
+//   margin: 20px;
+//   width: 600px;
+//   border: 1px solid gray;
+// `;
+
+// const TableRow = styled.tr`
+//   border: 1px solid gray;
+//   background-color: lightgray;
+// `;
+
+// const TableHeader = styled.th`
+//   padding: 10px;
+//   text-align: left;
+// `;
+
+// const TableCell = styled.td`
+//   padding: 10px;
+//   border: 1px solid gray;
+// `;
+
+// const Button = styled.button`
+//   background-color: #0077cc;
+//   color: white;
+//   border: none;
+//   padding: 10px 10px;
+//   font-size: 16px;
+//   cursor: pointer;
+//   margin: 5px;
+// `;
 
 const Container = styled.div`
   display: flex;
@@ -71,24 +118,24 @@ export default function AddTab(props: Props) {
     setEditName(e.target.value);
   };
 
-  const addCategory = () => {
+  const addTab = () => {
     if (name == "") {
-      alert("Please enter category name.");
+      alert("Please enter Tab name.");
       return;
     }
-    let categories: ITab[] = tabs;
-    if (categories.length == 5) {
+    let tempTabs: ITab[] = tabs;
+    if (tempTabs.length == 5) {
       alert("You can only add 5 tabs.");
       return;
     }
 
-    let flag = categories.some((item) => {
+    let flag = tempTabs.some((item) => {
       return item.name.toLowerCase() == name.toLowerCase();
     });
     if (flag) {
-      alert("Category already exist.");
+      alert("Tab already exist.");
     } else {
-      let id = categories[categories.length - 1].id;
+      let id = tempTabs[tempTabs.length - 1].id;
       let newCat: ITab = {
         id: id + 1,
         name,
@@ -100,28 +147,23 @@ export default function AddTab(props: Props) {
         minDiscount: 0,
         maxDiscount: 100,
       };
-      categories.push(newCat);
-      dispatch(tabAction.addTab(categories));
+      tempTabs.push(newCat);
+      dispatch(tabAction.addTab(tempTabs));
       props.onClose();
     }
   };
 
-  const editCategory = () => {
+  const editTab = () => {
     if (editName == "") {
-      alert("Please enter category name.");
+      alert("Please enter Tab name.");
       return;
     }
-    let categories: ITab[] = tabs;
-    // let flag = categories.some((item, index) => {
-    //   return item.name.toLowerCase() == editName.toLowerCase();
-    // });
-    // if (flag) {
-    //   alert("Category already exist.");
-    // } else {
-    categories[position].name = editName;
-    dispatch(tabAction.addTab(categories));
+    let tab: ITab[] = tabs;
+    
+    tab[position].name = editName;
+    dispatch(tabAction.addTab(tab));
     onClear();
-    // }
+  
   };
 
   const onClear = () => {
@@ -131,23 +173,23 @@ export default function AddTab(props: Props) {
   };
 
   const onDelete = (cat: ITab) => {
-    let categories: ITab[] = tabs;
-    if (categories.length == 1) {
+    let tab: ITab[] = tabs;
+    if (tab.length == 1) {
       return;
     }
 
-    let newList: ITab[] = categories.filter((item) => {
+    let newList: ITab[] = tab.filter((item) => {
       return item.name != cat.name;
     });
     console.log(newList);
-    dispatch(tabAction.deleteTabs(newList, categories[0]));
+    dispatch(tabAction.deleteTabs(newList, tab[0]));
     // dispatch(tabAction.changeTab(categories[0]));
     props.onClose();
   };
 
-  const onEdit = (category: ITab, index: number) => {
-    setEdit(category);
-    setEditName(category.name);
+  const onEdit = (tab: ITab, index: number) => {
+    setEdit(tab);
+    setEditName(tab.name);
     setPosition(index);
   };
 
@@ -168,7 +210,7 @@ export default function AddTab(props: Props) {
                     />
                   </TableHeader>
                   <TableHeader>
-                    <Button onClick={editCategory} type="button">
+                    <Button onClick={editTab} type="button">
                       Update
                     </Button>
                   </TableHeader>
@@ -195,7 +237,7 @@ export default function AddTab(props: Props) {
                     />
                   </TableHeader>
                   <TableHeader>
-                    <Button onClick={addCategory} type="button">
+                    <Button onClick={addTab} type="button">
                       Add Tab
                     </Button>
                   </TableHeader>
@@ -232,22 +274,7 @@ export default function AddTab(props: Props) {
                         </Button>
                       </TableCell>
                     </TableRow>
-                    // <div key={"" + index}>
-                    //   <h3>{item.name}</h3>
-                    //   {item.name.toLowerCase() != "home" && (
-                    //     <>
-                    //       <button
-                    //         onClick={(evt) => onEdit(item, index)}
-                    //         type="button"
-                    //       >
-                    //         Edit
-                    //       </button>
-                    //       <button onClick={(evt) => onDelete(item)}>
-                    //         Delete
-                    //       </button>
-                    //     </>
-                    //   )}
-                    // </div>
+                    
                   );
                 })}
               </tbody>

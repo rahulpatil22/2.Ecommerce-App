@@ -1,6 +1,9 @@
-export const CATEGORY_CHANGE = "CATEGORY_CHANGE";
-export const CATEGORY_ADD = "CATEGORY_ADD";
+export const TAB_CHANGE = "CATEGORY_CHANGE";
+export const TAB_ADD = "CATEGORY_ADD";
+export const TAB_DELETE = "TAB_DELETE";
+
 export default {
-  CATEGORY_CHANGE,
-  CATEGORY_ADD,
+  TAB_CHANGE,
+  TAB_ADD,
+ TAB_DELETE,
 };

@@ -18,12 +18,12 @@
   position: absolute;
   z-index: 1;
   /* padding: 100px; */
-  /* left: 0;
-  top: 0; */
+  /* left: 100px;
+  top: 150px; */
   width: 50%;
   height: 50%;
-  /* top: 50%;
-  left: 50%; */
+  top: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
   overflow: auto;
   background-color: rgb(141, 135, 135);
