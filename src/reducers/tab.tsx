@@ -64,7 +64,7 @@ type Action = {
   type: string;
   payload: any;
 };
-
+//this reducer manipulate the state
 export default (state: ITabState = initialState, action: Action) => {
   switch (action.type) {
     case actionType.TAB_CHANGE:

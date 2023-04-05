@@ -4,6 +4,7 @@ const INITIAL_STATE = {
   tab: "Home",
 };
 export default (state = INITIAL_STATE, action :any) => {
+  //state is inital state , action has a type and payload
   switch (action.type) {
     default:
       return state;

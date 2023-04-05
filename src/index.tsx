@@ -36,8 +36,10 @@ const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
+  //provider makes redux store available to rest of our app
   <React.StrictMode>
     <Provider store={store}>
+      
       <PersistGate loading={null} persistor={persistor}>
         <App />
       </PersistGate>

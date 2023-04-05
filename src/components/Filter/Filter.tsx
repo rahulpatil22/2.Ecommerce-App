@@ -3,11 +3,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { IProduct } from "../../modals/IProduct";
 
 import styled from "styled-components";
-import SelectDropdown from "../Custom/SelectDropdown";
+import SelectDropdown from "./SelectDropdown";
 import { ITab } from "../../modals/ITab";
 import tabAction from "../../Actions/tabAction";
-import RangeInput from "../Custom/RangeInput";
-// import MultiRangeSlider from "multi-range-slider-react";
+import RangeInput from "./RangeInput";
+
 
 const ParentDiv = styled.div`
   display: flex;

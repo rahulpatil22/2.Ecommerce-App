@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { ITab } from "../modals/ITab";
+import { ITab } from "../../modals/ITab";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
-import tabAction from "../Actions/tabAction";
+import tabAction from "../../Actions/tabAction";
 import "./Styles.css";
 
 
@@ -104,11 +104,15 @@ const Button = styled.button`
 
 export default function AddTab(props: Props) {
   const tabs = useSelector((state: RootState) => state.tabs).Tabs;
+  //using useSelector  we called store(tabs), we fetched data inside our state Tabs)inside reducer
+  //rootstate from store with state
   const [name, setName] = useState("");
   const [edit, setEdit] = useState<ITab>();
   const [position, setPosition] = useState(-1);
   const [editName, setEditName] = useState("");
   const dispatch = useDispatch();
+  //call the actions using usedispatch hook with the method
+
 
   const handleChange = (e: any) => {
     setName(e.target.value);
@@ -124,6 +128,7 @@ export default function AddTab(props: Props) {
       return;
     }
     let tempTabs: ITab[] = tabs;
+    //in this tabs we store the data from store and this tabs store in tempTabs
     if (tempTabs.length == 5) {
       alert("You can only add 5 tabs.");
       return;
@@ -148,7 +153,10 @@ export default function AddTab(props: Props) {
         maxDiscount: 100,
       };
       tempTabs.push(newCat);
+      // newcat is push in temptab
       dispatch(tabAction.addTab(tempTabs));
+     // and dispatch the action with addTab method with store data (new data and store data)
+      //those actions we provide type and payload from tabAction.tsx
       props.onClose();
     }
   };

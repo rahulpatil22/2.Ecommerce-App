@@ -5,13 +5,17 @@ import thunk from "redux-thunk";
 import storage from "redux-persist/lib/storage";
 import { persistStore, persistReducer } from "redux-persist";
 import tab from "../reducers/tab";
+import product from "../reducers/product";
 
-// store.js
+// store.js= state stored here
 const rootReducer = combineReducers({
   tabs: tab,
-  
+  products: product
+  //using this tabs we call store inside the AddTab using useSelector
+  //in tabs we can store our state in the tab.tsx(reducer)
 });
-
+//redux thunk is allow  to do nested arrow function
+// and  allow us to write actionCreators that returns a function instead of an action
 const persistConfig = {
   key: "authType",
   storage: storage,

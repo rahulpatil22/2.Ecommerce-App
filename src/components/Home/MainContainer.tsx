@@ -8,6 +8,7 @@ import styled from "styled-components";
 
 // import tabAction from "../../Actions/tabAction";
 import HeaderComponent from "../Header/HeaderComponent";
+import TabWiseProduct from "./TabWiseProduct";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -21,11 +22,11 @@ const Container = styled.div`
 //   width: 100%;
 // `;
 
-// const Main = styled.main`
-//   display: flex;
-//   flex: 1;
-//   overflow: hidden;
-// `;
+const Main = styled.main`
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+`;
 
 // const Button = styled.button`
 //   background-color: #0077cc;
@@ -130,7 +131,9 @@ const MainContainer = () => {
   return (
     <Container>
       <HeaderComponent></HeaderComponent>
-      
+      <Main>
+        <TabWiseProduct />
+      </Main>
     </Container>
   );
 };

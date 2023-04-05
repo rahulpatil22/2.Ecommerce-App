@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import AddTab from "../../Modal/AddTab";
+import AddTab from "../Modal/AddTab";
 // import jsonData from "../../database/data.json";
 
 import styled from "styled-components";
@@ -15,7 +15,7 @@ import tabAction from "../../Actions/tabAction";
 // `;
 
 const Header = styled.header`
-  background-color:  #a6a6a6;
+  background-color:  #00ccb4;
   display: flex;
   width: 100%;
 `;
