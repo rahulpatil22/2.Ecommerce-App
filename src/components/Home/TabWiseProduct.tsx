@@ -17,9 +17,6 @@ const RightPanel = styled.div`
   background-color: #ededed;
 `;
 
-
-
-
 const TabWiseProduct = () => {
   const [open] = useState(true);
   return (

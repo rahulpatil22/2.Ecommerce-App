@@ -1,17 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
-interface Option {
-  value: string;
-  label: string;
-}
-
-interface Props {
-  title: string;
-  value: string;
-  options: string[];
-  onSelect: (value: string) => void;
-}
 
 const Container = styled.div`
   display: flex;

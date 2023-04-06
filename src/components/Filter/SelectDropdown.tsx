@@ -9,11 +9,6 @@ const Select = styled.select`
   flex-grow: 1;
 `;
 
-interface Option {
-  value: string;
-  label: string;
-}
-
 interface Props {
   title: string;
   value: string;

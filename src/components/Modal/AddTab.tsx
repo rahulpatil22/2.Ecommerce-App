@@ -5,56 +5,9 @@ import styled from "styled-components";
 import tabAction from "../../Actions/tabAction";
 import "./Styles.css";
 
-
 type Props = {
   onClose: () => void;
 };
-
-// const Container = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// `;
-
-// const Input = styled.input`
-//   margin: 20px;
-//   padding: 10px;
-//   width: 300px;
-//   border-radius: 5px;
-//   border: 1px solid gray;
-// `;
-
-// const Table = styled.table`
-//   border-collapse: collapse;
-//   margin: 20px;
-//   width: 600px;
-//   border: 1px solid gray;
-// `;
-
-// const TableRow = styled.tr`
-//   border: 1px solid gray;
-//   background-color: lightgray;
-// `;
-
-// const TableHeader = styled.th`
-//   padding: 10px;
-//   text-align: left;
-// `;
-
-// const TableCell = styled.td`
-//   padding: 10px;
-//   border: 1px solid gray;
-// `;
-
-// const Button = styled.button`
-//   background-color: #0077cc;
-//   color: white;
-//   border: none;
-//   padding: 10px 10px;
-//   font-size: 16px;
-//   cursor: pointer;
-//   margin: 5px;
-// `;
 
 const Container = styled.div`
   display: flex;
@@ -113,7 +66,6 @@ export default function AddTab(props: Props) {
   const dispatch = useDispatch();
   //call the actions using usedispatch hook with the method
 
-
   const handleChange = (e: any) => {
     setName(e.target.value);
   };
@@ -123,19 +75,19 @@ export default function AddTab(props: Props) {
   };
 
   const addTab = () => {
-    if (name == "") {
+    if (name === "") {
       alert("Please enter Tab name.");
       return;
     }
     let tempTabs: ITab[] = tabs;
     //in this tabs we store the data from store and this tabs store in tempTabs
-    if (tempTabs.length == 5) {
+    if (tempTabs.length === 5) {
       alert("You can only add 5 tabs.");
       return;
     }
 
     let flag = tempTabs.some((item) => {
-      return item.name.toLowerCase() == name.toLowerCase();
+      return item.name.toLowerCase() === name.toLowerCase();
     });
     if (flag) {
       alert("Tab already exist.");
@@ -155,23 +107,22 @@ export default function AddTab(props: Props) {
       tempTabs.push(newCat);
       // newcat is push in temptab
       dispatch(tabAction.addTab(tempTabs));
-     // and dispatch the action with addTab method with store data (new data and store data)
+      // and dispatch the action with addTab method with store data (new data and store data)
       //those actions we provide type and payload from tabAction.tsx
       props.onClose();
     }
   };
 
   const editTab = () => {
-    if (editName == "") {
+    if (editName === "") {
       alert("Please enter Tab name.");
       return;
     }
     let tab: ITab[] = tabs;
-    
+
     tab[position].name = editName;
     dispatch(tabAction.addTab(tab));
     onClear();
-  
   };
 
   const onClear = () => {
@@ -182,16 +133,15 @@ export default function AddTab(props: Props) {
 
   const onDelete = (cat: ITab) => {
     let tab: ITab[] = tabs;
-    if (tab.length == 1) {
+    if (tab.length === 1) {
       return;
     }
 
     let newList: ITab[] = tab.filter((item) => {
-      return item.name != cat.name;
+      return item.name !== cat.name;
     });
     console.log(newList);
     dispatch(tabAction.deleteTabs(newList, tab[0]));
-    // dispatch(tabAction.changeTab(categories[0]));
     props.onClose();
   };
 
@@ -204,7 +154,7 @@ export default function AddTab(props: Props) {
   return (
     <div className="modal">
       <Container>
-        {edit != undefined ? (
+        {edit !== undefined ? (
           <>
             <Table>
               <thead>
@@ -282,7 +232,6 @@ export default function AddTab(props: Props) {
                         </Button>
                       </TableCell>
                     </TableRow>
-                    
                   );
                 })}
               </tbody>

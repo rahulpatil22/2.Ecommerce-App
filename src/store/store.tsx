@@ -3,7 +3,8 @@ import { composeWithDevTools } from "@redux-devtools/extension";
 import thunk from "redux-thunk";
 
 import storage from "redux-persist/lib/storage";
-import { persistStore, persistReducer } from "redux-persist";
+// import { persistStore, persistReducer } from "redux-persist";
+import {  persistReducer } from "redux-persist";
 import tab from "../reducers/tab";
 import product from "../reducers/product";
 
@@ -22,9 +23,10 @@ const persistConfig = {
   whitelist: ["tabs","products"], // which reducer want to store
 };
 const pReducer = persistReducer(persistConfig, rootReducer);
-const store = createStore(pReducer, composeWithDevTools(applyMiddleware(thunk)));
-const persistor = persistStore(store);
-export { persistor, store };
+export const store = createStore(pReducer, composeWithDevTools(applyMiddleware(thunk)));
+// const persistor = persistStore(store);
+// export { persistor, store };
+
 
 declare global {
   type RootState = ReturnType<typeof store.getState>;

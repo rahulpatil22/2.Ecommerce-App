@@ -1,13 +1,10 @@
-import React, { FC, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { IProduct } from "../../modals/IProduct";
-
 import styled from "styled-components";
 import SelectDropdown from "./SelectDropdown";
 import { ITab } from "../../modals/ITab";
 import tabAction from "../../Actions/tabAction";
 import RangeInput from "./RangeInput";
-
 
 const ParentDiv = styled.div`
   display: flex;
@@ -45,16 +42,10 @@ const Input = styled.input`
   border-radius: 5px;
 `;
 
-type FilterProps = {
-  onApply: Function;
-};
-
 const Filter = () => {
   const tabs = useSelector((state: RootState) => state.tabs).Tabs;
   const tab = useSelector((state: RootState) => state.tabs).Tab;
-  const categoryList = useSelector(
-    (state: RootState) => state.products
-  ).Categories;
+  const categoryList = useSelector((state: RootState) => state.products).Categories;
   const brandList = useSelector((state: RootState) => state.products).Brands;
   const [searchTerm, setSearchTerm] = useState<string>(tab.serach);
   const [categoryFilter, setCategoryFilter] = useState<string>(tab.category);
@@ -87,8 +78,6 @@ const Filter = () => {
     setSearchTerm(tmpTab.serach);
     setMinPrice(tmpTab.minPrice);
     setMaxPrice(tmpTab.maxPrice);
-    // setMinPriceDefault(0);
-    // setMaxPriceDefault(200);
     setMinDiscount(tmpTab.minDiscount);
     setMaxDiscount(tmpTab.maxDiscount);
     updateFilter(tmpTab, true);
@@ -185,14 +174,6 @@ const Filter = () => {
             setMaxPrice(max);
           }}
         />
-        {/* <MultiRangeSlider
-          min={0}
-          max={200}
-          onChange={({ min, max }) => {
-            setMinPrice(min);
-            setMaxPrice(max);
-          }}
-        /> */}
       </ChildDiv>
       <ChildDiv>
         <label>Discount:</label>
@@ -207,15 +188,6 @@ const Filter = () => {
             setMaxDiscount(max);
           }}
         />
-        {/* <MultiRangeSlider
-          min={0}
-          max={100}
-          onChange={({ min, max }) => {
-            // console.log("Discount => Min : " + min + " Max : " + max);
-            setMinDiscount(min);
-            setMaxDiscount(max);
-          }}
-        /> */}
       </ChildDiv>
       <ChildDiv></ChildDiv>
       <ChildDivRow>

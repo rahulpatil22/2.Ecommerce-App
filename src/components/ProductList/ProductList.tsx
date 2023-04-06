@@ -1,19 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-// import AddTab from "../Modal/AddTab";
+import { useSelector } from "react-redux";
 import { IProduct } from "../../modals/IProduct";
-// import Filter from "../Tab/Filter";
-// import styled from "styled-components";
 import Products from "../ProductList/Products";
-// import { ITab } from "../../modals/ITab";
-
-
 
 const ProductList = () => {
   const tab = useSelector((state: RootState) => state.tabs).Tab;
   const products = useSelector((state: RootState) => state.products).Products;
-  const [productList, setProductList] = useState<IProduct[]>(products);
-  const [open, setOpen] = useState(true);
   const [searchTerm, setSearchTerm] = useState<string>(tab.serach);
   const [categoryFilter, setCategoryFilter] = useState<string>(tab.category);
   const [brandFilter, setBrandFilter] = useState<string>(tab.brand);

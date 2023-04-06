@@ -1,30 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import AddTab from "../Modal/AddTab";
-// import jsonData from "../../database/data.json";
-
 import styled from "styled-components";
 import { ITab } from "../../modals/ITab";
-
 import tabAction from "../../Actions/tabAction";
 
-// const Container = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   height: 100vh;
-// `;
-
 const Header = styled.header`
-  background-color:  #00ccb4;
+  background-color: #00ccb4;
   display: flex;
   width: 100%;
 `;
-
-// const Main = styled.main`
-//   display: flex;
-//   flex: 1;
-//   overflow: hidden;
-// `;
 
 const Button = styled.button`
   background-color: #0077cc;
@@ -38,24 +23,6 @@ const Button = styled.button`
   right: 5px;
 `;
 
-// const LeftDrawer = styled.nav<{ open: boolean }>`
-//   background-color: #333;
-//   color: #fff;
-//   width: ${({ open }) => (open ? "250px" : "0px")};
-//   transition: width 0.3s ease-in-out;
-// `;
-
-// const RightPanel = styled.div`
-//   flex: 1;
-//   overflow: auto;
-//   padding: 16px;
-//   background-color: #ededed;
-// `;
-
-// const MenuIcon = styled.span`
-//   cursor: pointer;
-// `;
-
 interface TabHeaderProps {
   isActive: boolean;
 }
@@ -68,39 +35,28 @@ const TabHeader = styled.div<TabHeaderProps>`
   font-weight: ${(props) => (props.isActive ? "bold" : "normal")};
 `;
 
-
-
-
-
-
 const HeaderComponent = () => {
-    // const products = useSelector((state: RootState) => state.products).Products;
-    // const categoryList = useSelector(
-    //   (state: RootState) => state.products
-    // ).Categories;
-    // const brandList = useSelector((state: RootState) => state.products).Brands;
-    const [showAddTab, setShowAddTab] = useState(false);
-    const tabs = useSelector((state: RootState) => state.tabs).Tabs;
-    const selectedTab = useSelector((state: RootState) => state.tabs).Tab;
-    const [open, setOpen] = useState(true);
-    const [activeTabIndex, setActiveTabIndex] = useState(0);
-    const dispatch = useDispatch();
-  
-    const addCategory = () => {
-      setShowAddTab(true);
-    };
-  
-    const onClose = () => {
-      setShowAddTab(!showAddTab);
-    };
-    const handleTabClick = (index: number, tab: ITab) => {
-      dispatch(tabAction.changeTab(tab));
-      setActiveTabIndex(index);
-    };
-  
-    return (
-      <div>
-        <Header>
+  const [showAddTab, setShowAddTab] = useState(false);
+  const tabs = useSelector((state: RootState) => state.tabs).Tabs;
+  const selectedTab = useSelector((state: RootState) => state.tabs).Tab;
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const dispatch = useDispatch();
+
+  const addCategory = () => {
+    setShowAddTab(true);
+  };
+
+  const onClose = () => {
+    setShowAddTab(!showAddTab);
+  };
+  const handleTabClick = (index: number, tab: ITab) => {
+    dispatch(tabAction.changeTab(tab));
+    setActiveTabIndex(index);
+  };
+
+  return (
+    <div>
+      <Header>
         {tabs.map((tab: ITab, index: number) => (
           <TabHeader
             key={index}
@@ -115,7 +71,7 @@ const HeaderComponent = () => {
         </Button>
       </Header>
       {showAddTab && <AddTab onClose={onClose} />}
-      </div>
-    );
-  };
-  export default HeaderComponent;
+    </div>
+  );
+};
+export default HeaderComponent;
