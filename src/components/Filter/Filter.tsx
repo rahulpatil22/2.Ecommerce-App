@@ -78,6 +78,8 @@ const Filter = () => {
     setSearchTerm(tmpTab.serach);
     setMinPrice(tmpTab.minPrice);
     setMaxPrice(tmpTab.maxPrice);
+    // setMinPriceDefault(0);
+    // setMaxPriceDefault(200);
     setMinDiscount(tmpTab.minDiscount);
     setMaxDiscount(tmpTab.maxDiscount);
     updateFilter(tmpTab, true);
@@ -194,7 +196,7 @@ const Filter = () => {
         <Button type="button" onClick={() => updateFilter(tab)}>
           Apply
         </Button>
-        <Button type="button" onClick={handleReset}>
+        <Button type="button" onClick={handleReset} >
           Reset
         </Button>
       </ChildDivRow>
