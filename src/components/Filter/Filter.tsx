@@ -51,7 +51,7 @@ const Filter = () => {
   const [categoryFilter, setCategoryFilter] = useState<string>(tab.category);
   const [brandFilter, setBrandFilter] = useState<string>(tab.brand);
   const [minPrice, setMinPrice] = useState<number>(0);
-  const [maxPrice, setMaxPrice] = useState<number>(200);
+  const [maxPrice, setMaxPrice] = useState<number>(1000);
   const [minDiscount, setMinDiscount] = useState<number>(tab.minDiscount);
   const [maxDiscount, setMaxDiscount] = useState<number>(tab.maxDiscount);
   const dispatch = useDispatch();
@@ -68,7 +68,7 @@ const Filter = () => {
       category: "",
       brand: "",
       minPrice: 0,
-      maxPrice: 200,
+      maxPrice: 1000,
       minDiscount: 0,
       maxDiscount: 100,
     };
@@ -139,35 +139,41 @@ const Filter = () => {
 
   return (
     <ParentDiv>
-      <ChildDiv>
+      {/* <ChildDiv>
         <Input
           type="text"
           placeholder="Search products"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-      </ChildDiv>
+      </ChildDiv> */}
+      <ChildDiv>
+      <label>Category:</label>
       <ChildDiv>
         <SelectDropdown
           value={categoryFilter}
-          title="Search Category"
+          title="Select Category"
           options={categoryList}
           onSelect={onOptionCategoryHandler}
         />
+        </ChildDiv>
       </ChildDiv>
+      <ChildDiv>
+      <label>Brand:</label>
       <ChildDiv>
         <SelectDropdown
           value={brandFilter}
-          title="Search Brand"
+          title="Select Brand"
           options={brandList}
           onSelect={onOptionBrandHandler}
         />
+        </ChildDiv>
       </ChildDiv>
       <ChildDiv>
         <label>Price:</label>
         <RangeInput
           title="Price"
-          max={200}
+          max={1000}
           min={0}
           maxValue={maxPrice}
           minValue={minPrice}

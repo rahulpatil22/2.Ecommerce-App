@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ITab } from "../../modals/ITab";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
 import tabAction from "../../Actions/tabAction";
-import "./Styles.css";
+// import "./Styles.css";
 
 type Props = {
+  edit: ITab | undefined;
+  position: number ;
+  editName: string;
   onClose: () => void;
 };
 
@@ -55,7 +58,7 @@ const Button = styled.button`
   margin: 5px;
 `;
 
-export default function AddTab(props: Props) {
+export default function EditTab(props: Props) {
   const tabs = useSelector((state: RootState) => state.tabs).Tabs;
   //using useSelector  we called store(tabs), we fetched data inside our state Tabs)inside reducer
   //rootstate from store with state
@@ -65,6 +68,12 @@ export default function AddTab(props: Props) {
   const [editName, setEditName] = useState("");
   const dispatch = useDispatch();
   //call the actions using usedispatch hook with the method
+
+  useEffect(()=>{
+    setEdit(props.edit);
+    setPosition(props.position)
+    setEditName(props.editName)
+  },[])
 
   const handleChange = (e: any) => {
     setName(e.target.value);
@@ -122,14 +131,14 @@ export default function AddTab(props: Props) {
 
     tab[position].name = editName;
     dispatch(tabAction.addTab(tab));
-    onClear();
+    props.onClose();
   };
 
-  const onClear = () => {
-    setEdit(undefined);
-    setPosition(-1);
-    setEditName("");
-  };
+  // const onClear = () => {
+  //   setEdit(undefined);
+  //   setPosition(-1);
+  //   setEditName("");
+  // };
 
   const onDelete = (cat: ITab) => {
     let tab: ITab[] = tabs;
@@ -154,8 +163,7 @@ export default function AddTab(props: Props) {
   return (
     <div className="modal">
       <Container>
-        {edit !== undefined ? (
-          <>
+      <>
             <Table>
               <thead>
                 <TableRow>
@@ -173,33 +181,6 @@ export default function AddTab(props: Props) {
                     </Button>
                   </TableHeader>
                   <TableHeader>
-                    <Button onClick={onClear} type="button">
-                      Close
-                    </Button>
-                  </TableHeader>
-                </TableRow>
-              </thead>
-            </Table>
-          </>
-        ) : (
-          <>
-            <Table>
-              <thead>
-                <TableRow>
-                  <TableHeader>
-                    <Input
-                      placeholder="Please enter tab name"
-                      value={name}
-                      type="text"
-                      onChange={handleChange}
-                    />
-                  </TableHeader>
-                  <TableHeader>
-                    <Button onClick={addTab} type="button">
-                      Add Tab
-                    </Button>
-                  </TableHeader>
-                  <TableHeader>
                     <Button onClick={props.onClose} type="button">
                       Close
                     </Button>
@@ -207,37 +188,7 @@ export default function AddTab(props: Props) {
                 </TableRow>
               </thead>
             </Table>
-
-            <Table>
-              <thead>
-                <TableRow>
-                  <TableHeader>Name</TableHeader>
-                  <TableHeader>Action</TableHeader>
-                </TableRow>
-              </thead>
-              <tbody>
-                {tabs.map((item: ITab, index: number) => {
-                  return (
-                    <TableRow key={item.id}>
-                      <TableCell>{item.name}</TableCell>
-                      <TableCell>
-                        <Button
-                          onClick={(evt) => onEdit(item, index)}
-                          type="button"
-                        >
-                          Edit
-                        </Button>
-                        <Button type="button" onClick={(evt) => onDelete(item)}>
-                          Delete
-                        </Button>
-                      </TableCell>
-                    </TableRow>
-                  );
-                })}
-              </tbody>
-            </Table>
           </>
-        )}
       </Container>
     </div>
   );
