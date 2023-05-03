@@ -6,6 +6,7 @@ import { ITab } from "../../modals/ITab";
 import tabAction from "../../Actions/tabAction";
 import { MdDeleteForever, MdEditNote } from "react-icons/md";
 import EditTab from "../Modal/EditTab";
+import {AiFillEdit} from "react-icons/ai";
 
 const Header = styled.header`
   background-color: #00ccb4;
@@ -148,16 +149,16 @@ const HeaderComponent = () => {
 
   return (
     <div>
-      <Header>
+      <Header >
         {tabs.map((tab: ITab, index: number) => (
-          <TabHeader key={index} isActive={selectedTab.id === tab.id}>
+          <TabHeader style={{marginRight:'16px'}} key={index} isActive={selectedTab.id === tab.id}>
             <label onClick={() => handleTabClick(index, tab)}>
               {tab.name}
             </label>
 
             {/* <br></br>  */}
-            <MdDeleteForever onClick={(evt) => onDelete(tab)} />
-            <MdEditNote onClick={(evt) => onEdit(tab, index)} />
+            <MdDeleteForever style={{marginLeft:'5px'}} onClick={(evt) => onDelete(tab)} />
+            <AiFillEdit style={{marginLeft:'5px'}} onClick={(evt) => onEdit(tab, index)} />
           </TabHeader>
         ))}
         <LeftSide>

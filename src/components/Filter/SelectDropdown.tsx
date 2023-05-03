@@ -6,7 +6,8 @@ const Select = styled.select`
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  flex-grow: 1;
+  width:200px;
+  margin:0px;
 `;
 
 interface Props {

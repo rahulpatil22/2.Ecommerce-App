@@ -17,6 +17,7 @@ const Input = styled.input`
   width: 50px;
   margin-inline-end: 5px;
   margin-top: 5px;
+  margin-left:10px;
 `;
 
 interface RangeInputProps {
